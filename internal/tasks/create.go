@@ -2,8 +2,8 @@ package tasks
 
 import "time"
 
-func create(description string) task {
-	newTask := task{
+func create(description string) Task {
+	newTask := Task{
 		Description: description,
 		Status:      "todo",
 		CreatedAt:   time.Now(),
