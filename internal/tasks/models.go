@@ -10,3 +10,4 @@ type Task struct {
 }
 
 var tasksMapStorage = map[int]Task{}
+var nextTaskId = 0

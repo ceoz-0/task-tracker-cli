@@ -9,7 +9,9 @@ func create(description string) Task {
 		CreatedAt:   time.Now(),
 		UpdatedAt:   time.Now(),
 	}
-	tasksMapStorage[len(tasksMapStorage)+1] = newTask
+
+	nextTaskId++
+	tasksMapStorage[nextTaskId] = newTask
 	return newTask
 
 }
